@@ -1,0 +1,1193 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.simulation {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  border: 1px solid black;
+}
+
+.simulation .topic {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.subtopics {
+  width: 100%-20px;
+  margin-left: 20px;
+  line-height: 35px;
+}
+
+.subtopics ol li {
+  margin-left: 40px;
+}
+
+.subtopics p {
+  margin-left: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  place-items: center;
+}
+
+.img1 {
+  height: 85px;
+  width: 100px;
+  margin: 20px auto;
+}
+
+.img2 {
+  height: 85px;
+  width: 110px;
+  margin: 20px auto;
+}
+
+.img3 {
+  height: 80px;
+  width: 110px;
+  margin: 20px auto;
+}
+
+.img4 {
+  height: 50px;
+  width: 90px;
+  margin: 20px auto;
+
+}
+
+.img5 {
+  height: 50px;
+  width: 100px;
+  margin: 20px auto;
+
+}
+
+.img6 {
+  height: 85px;
+  width: 90px;
+  margin: 20px auto;
+}
+
+/* next button */
+
+#buttonup {
+  border: 0;
+  cursor: pointer;
+  float: right;
+  margin-right: 20px;
+  background-color: white;
+}
+
+#buttondown {
+  border: 0;
+  cursor: pointer;
+  float: left;
+  margin-left: 20px;
+  background-color: white;
+  transform: scaleX(-1);
+  display: none;
+  margin-top: -19px;
+}
+
+#IBgraphbutton {
+  display: none;
+  border: 0;
+  cursor: pointer;
+  float: right;
+  margin-right: 20px;
+  width: 90px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+#IBgraph {
+  display: none;
+  height: 449px;
+  width: 784px;
+  position: fixed;
+  background-color: white;
+  top: 110px;
+  left: 6px;
+  border: black solid;
+  border-width: 3px;
+  z-index: 7;
+}
+
+#IBgraph button {
+  width: 60px;
+  height: 36px;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+  margin-right: 8px;
+  position: relative;
+  margin-top: -38px;
+}
+#lineargraph {
+  width: 60px;
+  height: 31px;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  position: relative;
+  margin-top: -17px;
+}
+#Vgraph {
+  display: none;
+  height: 449px;
+  width: 784px;
+  position: fixed;
+  background-color: white;
+  top: 110px;
+  left: 6px;
+  border: black solid;
+  border-width: 3px;
+  z-index: 7;
+}
+#Vgraph button {
+  width: 60px;
+  height: 31px;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+  margin-right: 8px;
+  position: relative;
+  margin-top: -34px;
+}
+#Vgraphbutton {
+  display: none;
+  border: 0;
+  cursor: pointer;
+  float: right;
+  margin-right: 20px;
+  width: 90px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+#calculate{
+  display: none;
+  height: 441px;
+  width: 719px;
+  position: fixed;
+  background-color: white;
+  top: 110px;
+  left: 45px;
+  border: black solid;
+  border-width: 3px;
+  z-index: 7;
+}
+#calculatebutton {
+  display: none;
+  border: 0;
+  cursor: pointer;
+  float: right;
+  margin-right: 20px;
+  width: 90px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+#calculate button {
+  width: 60px;
+  height: 31px;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+  margin-right: 8px;
+  position: relative;
+  margin-top: 335px;
+}
+
+
+
+.nextimg {
+  width: 45px;
+  height: 45px;
+}
+
+#content {
+  width: 800px;
+  height: 500px;
+}
+
+#content2 {
+  width: 800px;
+  height: 500px;
+}
+
+/* options */
+
+.simoptions {
+  background-color: rgba(135, 207, 235, 0.621);
+  width: 25%;
+  height: 550px;
+  float: left;
+  filter: blur(0px);
+}
+
+.procedure {
+  margin: 10px;
+}
+
+#exp {
+  height: 35px;
+  width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(65, 62, 62, 0.219);
+  cursor: pointer;
+}
+
+.insert-reset-observation {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.insert-reset-observation button {
+  width: 120px;
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.voltage {
+  margin: 10px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: black;
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid red;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  width: 20px;
+  height: 20px;
+}
+
+.materialdiv {
+  margin: 10px;
+}
+
+#materials {
+  height: 35px;
+  width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(65, 62, 62, 0.219);
+  cursor: pointer;
+}
+
+.thickness {
+  margin: 10px;
+}
+
+.hallcurrent {
+  margin: 10px;
+}
+
+.result {
+  margin: 10px;
+  text-align: left;
+}
+
+/* Simulation Box */
+
+.mainsimulation {
+  width: 0%;
+  height: 450px;
+  float: 50%;
+  text-align: center;
+  position: relative;
+  
+}
+#circuit_1 {
+  position:absolute;
+  left: 215px;
+  width: 422px;
+  height: 26px;
+  top: 483px;
+}
+#circuit_10{
+  position:absolute;
+  left: 190px;
+  width: 54px;
+  height: 68px;
+  top: 489px;
+}
+#circuit_2 {
+  position:absolute;
+  left: 117px;
+  width: 109px;
+  height: 94px;
+  top:405px;
+  
+}
+#circuit_3{
+  position:absolute;
+  left: 465px;
+  width: 45px;
+  height: 133px;
+  top: 363px;
+
+}
+#circuit_4{
+  position:absolute;
+  left: 312px;
+  width: 45px;
+  height: 139px;
+  top: 359px;
+  
+}
+#circuit_5{
+  position:absolute;
+  left: 214px;
+  width: 75px;
+  height: 118px;
+  top: 382px;
+}
+#circuit_6{
+  position:absolute;
+  left: 391px;
+  width: 43px;
+  height: 124px;
+  top: 372px;
+}
+#circuit_7{
+  position:absolute;
+  left: 572px;
+  width: 128px;
+  height: 69px;
+  top: 506px;
+  transform: rotate(352deg);
+}
+#circuit_8{
+  position:absolute;
+  left: 561px;
+  width: 107px;
+  height: 192px;
+  top: 365px;
+  
+}
+#circuit_9{
+  position:absolute;
+  left: 650px;
+  width: 84px;
+  height: 99px;
+  top: 460px;
+}
+
+
+#circuit1 {
+  position:absolute;
+  left: 343px;
+  width: 450px;
+  height: 26px;
+  top: 301px;
+}
+#circuit2 {
+  position:absolute;
+  left: 205px;
+  width: 138px;
+  height: 109px;
+  top: 214px;
+  
+}
+#circuit3{
+  position:absolute;
+  left: 555px;
+  width: 45px;
+  height: 143px;
+  top: 169px;
+
+}
+#circuit4{
+  position:absolute;
+  left: 424px;
+  width: 45px;
+  height: 144px;
+  top: 169px;
+ 
+  
+}
+#circuit5{
+  position:absolute;
+  left: 328px;
+  width: 75px;
+  height: 131px;
+  top: 187px;
+  
+}
+#circuit6{
+  position:absolute;
+  left: 485px;
+  width: 43px;
+  height: 137px;
+  top: 179px;
+}
+#circuit7{
+  position:absolute;
+  left: 574px;
+  width: 194px;
+  height: 97px;
+  top: 325px;
+  transform: rotate(353deg);
+}
+#circuit8{
+  position:absolute;
+  left: 621px;
+  width: 107px;
+  height: 208px;
+  top: 182px;
+  
+}
+#circuit9{
+  position:absolute;
+  left: 689px;
+  width: 109px;
+  height: 92px;
+  top: 303px;
+  
+}
+#circuit10{
+  position:absolute;
+  left: 371px;
+  width: 140px;
+  height: 79px;
+  top: 115px;
+}
+#sim1{
+  position:absolute;
+  left: 470px;
+  width: 76px;
+  height: 144px;
+  top: 129px;
+  
+  
+}
+#sim2{
+  position:absolute;
+  left: 470px;
+  width: 76px;
+  height: 144px;
+  top: 129px;
+  
+}
+#sim3{
+  position:absolute;
+  left: 281px;
+  width: 458px;
+  height: 302px;
+  top: 129px;
+  
+}
+#sim4{
+  position:absolute;
+  left: 281px;
+  width: 458px;
+  height: 302px;
+  top: 129px;
+  
+}
+#sim5{
+  position:absolute;
+  left: 280px;
+  width: 20px;
+  height: 20px;
+  top: 129px;
+  transform: rotateY(180deg);
+}
+#sim6{
+  position:absolute;
+  left: 280px;
+  width: 70px;
+  height: 50px;
+  top: 130px;
+  transform: rotateY(180deg);
+}
+#sim7{
+  position:absolute;
+  left: 281px;
+  width: 458px;
+  height: 302px;
+  top: 122px;
+  
+}
+#sim8{
+  position:absolute;
+  left: 465px;
+  width: 79px;
+  height: 170px;
+  top: 202px;
+
+}
+#sim9{
+  position:absolute;
+  left: 465px;
+  width: 89px;
+  height: 244px;
+  top: 175px;
+
+}
+#sim10{
+  position:absolute;
+  left: 280px;
+  width: 70px;
+  height: 50px;
+  top: 129px;
+  
+  
+}
+#sim11{
+  position:absolute;
+  left: 495px;
+  width: 81px;
+  height: 66px;
+  top: 133px;
+   transform: rotate(3deg); 
+  
+}
+#sim12{
+  position:absolute;
+  left: 465px;
+  width: 92px;
+  height: 244px;
+  top: 175px;
+
+}
+#sim13{
+  position:absolute;
+  left: 555px;
+  width: 45px;
+  height: 138px;
+  top: 176px;
+
+}
+#cir_1 {
+  position:absolute;
+  left: 310px;
+  width: 405px;
+  height: 23px;
+  top: 301px;
+}
+#cir_3{
+  position:absolute;
+  left: 600px;
+  width: 45px;
+  height: 133px;
+  top: 183px;
+}
+#cir_4{
+  position:absolute;
+  left: 426px;
+  width: 45px;
+  height: 139px;
+  top: 180px;
+}
+#cir_5{
+  position:absolute;
+  left: 328px;
+  width: 75px;
+  height: 131px;
+  top: 191px;
+}
+#cir_6{
+  position:absolute;
+  left: 514px;
+  width: 43px;
+  height: 134px;
+  top: 185px;
+}
+ #grad1 {
+  
+   background-image: linear-gradient(yellow, yellow);
+  transform: rotate(90deg); 
+} 
+#add {
+  position: absolute;
+  left:689px;
+  top:10px;
+  display: none;
+ 
+} 
+
+#probe {
+  width: 18px;
+  height: 120px;
+  position: relative;
+  top: -368px;
+  left: 293px;
+  overflow: hidden;
+  animation-duration: 3s;
+  transition: transform .3s;
+  display: none;
+}
+
+@keyframes probeslideup {
+  from {
+    top: -265px;
+  }
+
+  to {
+    top: -368px;
+  }
+}
+
+@keyframes wireslideup {
+  from {
+    top: -330px;
+  }
+
+  to {
+    top: -433px;
+  }
+}
+
+#wire {
+  width: 189px;
+  height: 200px;
+  position: relative;
+  top: -433px;
+  left: 201px;
+  overflow: hidden;
+  animation-duration: 3s;
+  transition: transform .3s;
+  display: none;
+}
+
+@keyframes hallprobeslideup {
+  from {
+    top: -255px;
+  }
+
+  to {
+    top: -365px;
+  }
+}
+
+@keyframes hallwireslideup {
+  from {
+    top: -290px;
+  }
+
+  to {
+    top: -400px;
+  }
+}
+
+#hallprobe {
+  width: 18px;
+  height: 78px;
+  position: relative;
+  top: -365px;
+  left: 289px;
+  overflow: hidden;
+  animation-duration: 3s;
+  transition: transform .3s;
+}
+
+#hallwire {
+  width: 188px;
+  height: 205px;
+  position: relative;
+  top: -400px;
+  left: 197px;
+  overflow: hidden;
+  animation-duration: 3s;
+  transition: transform .3s;
+}
+/* #div1 {
+  width: 26px;
+  height: 13px;
+  position: absolute;
+  margin-top: 243px;
+  margin-left: 230px;
+  border-style: solid;
+  font-size: 19px;
+  text-align: center;
+  background-color: #fff;
+  transform: rotate(353deg);
+  
+} */
+#fieldvalue {
+  width: 30px;
+  height: 16px;
+  position: absolute;
+  margin-top: 243px;
+  margin-left: 234px;
+  border-style: solid;
+  font-size: 14px;
+  text-align: center;
+  background-color: #fff;
+  transform: rotate(357deg);
+  
+}
+
+#field {
+  width: 36px;
+  height: 15px;
+  position: absolute;
+  margin-top: 336px;
+  margin-left: 597px;
+  border-style: solid;
+  font-size: 14px;
+  text-align: center;
+  background-color: white;
+  transform: rotate(358deg);
+  
+}
+#unit {
+  width: 13px;
+  height: 14px;
+  position: absolute;
+  margin-top: 339px;
+  margin-left: 637px;
+  font-size: 12px;
+  text-align: center;
+  background-color: white;
+  transform: rotate(3deg);
+  
+}
+
+#voltagevalue {
+  width: 70px;
+  height: 21px;
+  position: absolute;
+  margin-top: 317px;
+  margin-left: 428px;
+  border: none;
+  font-size: 19px;
+  text-align: center;
+}
+
+.observation {
+  display: none;
+  height: 514px;
+  width: 700px;
+  position: fixed;
+  background-color: rgb(174, 215, 232);
+  top: 63px;
+  left: 45px;
+  border: black solid;
+  border-width: 3px;
+  z-index: 7;
+}
+
+.tablediv {
+  height: 472px;
+  justify-content: center;
+  display: flex;
+  overflow-y: auto;
+}
+
+.observationTable {
+  border-collapse: collapse;
+  width: 95%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  height: min-content;
+  background-color: white;
+}
+
+.observation td,
+th {
+  border: 2px solid #000000;
+  text-align: center;
+  padding: 8px;
+}
+
+.tableObservation {
+  display: flex;
+  height: 40px;
+  width: 100%-10px;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.tableObservation button {
+  width: 60px;
+  height: 36px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#content3 {
+  width: 800px;
+  height: 500px;
+}
+
+#graph {
+  width: 800px;
+  height: 500px;
+}
+
+.blocker {
+  display: none;
+  position: absolute;
+  height: 550px;
+  width: 800px;
+  z-index: 6;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#copyright {
+  position: absolute;
+  left: 60px;
+  top: 580px;
+  font-size: 12px;
+}
+.help {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 5px;
+}
+
+.help button {
+  background-color: rgb(189, 231, 249);
+  border: 0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.help img {
+  width: 25px;
+  height: 25px;
+}
+
+#instructions {
+  display: none;
+  height: 400px;
+  width: 700px;
+  position: absolute;
+  background-color: white;
+  top: 110px;
+  left: 45px;
+  border: black solid;
+  border-width: 3px;
+  z-index: 7;
+}
+
+.icontent {
+  margin-left: 35px;
+  line-height: 1.63rem;
+}
+
+#instructions button {
+  width: 60px;
+  height: 31px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* hover image names */
+
+.electromagnet {
+  height: 10em;
+  width: 12em;
+  position: absolute;
+  top: 90px;
+  left: 405px;
+  z-index: 5;
+}
+
+.ammeter {
+  height: 9em;
+  width: 12em;
+  position: absolute;
+  z-index: 5;
+  top: 320px;
+  left: 222px;
+}
+
+.digitalgaussmeter {
+  height: 9em;
+  width: 12em;
+  position: absolute;
+  z-index: 5;
+  top: 312px;
+  left: 585px;
+}
+
+.hallsensor {
+  height: 1em;
+  width: 6em;
+  position: absolute;
+  z-index: 5;
+  top: 457px;
+  left: 523px;
+}
+
+.hprobe {
+  height: 1.5em;
+  width: 5em;
+  position: absolute;
+  z-index: 5;
+  top: 457px;
+  left: 523px;
+}
+
+.powersupply {
+  height: 7em;
+  width: 12em;
+  position: absolute;
+  z-index: 5;
+  top: 338px;
+  left: 591px;
+}
+@keyframes moveBg {
+  0%{
+    left: 281px;
+    height: 458px;
+    width: 302px;
+    transform: scale(0);
+  }
+  
+  100%{
+    left: 281px;
+    top: 458px;
+    height: 302px;
+    transform: scale(1);
+
+  }
+}
+@-webkit-keyframes moveBg {
+  0%{
+    left: 485px;
+    top: 160px;
+    width:0px;
+    transform: scale(0);
+
+  }
+  
+  100%{
+    left: 650px;
+    top: 20px;
+    width: 95px;
+    height:154px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveBgMount {
+  0%{
+    left: 485px;
+    top: 185px;
+    width: 79px;
+    transform:scale(0);
+  }
+  
+  100%{
+    left: 485px;
+    top: 185px;
+    width: 79px;
+    
+    transform: scale(1);
+   
+
+  }
+}
+@-webkit-keyframes moveBgMount {
+  0%{
+    left: 485px;
+    top: 160px;
+    width:0px;
+    transform: scale(0);
+
+  }
+  
+  100%{
+    left: 650px;
+    top: 20px;
+    width: 90px;
+    height:154px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveSq {
+  0%{
+    left: 281px;
+    width: 458px;
+    height: 302px;
+    transform: scale(0);
+  }
+  
+  100%{
+    left: 281px;
+    width: 458px;
+    height: 302px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveAnn {
+  0%{
+    left: 465px;
+    width: 79px;
+    height: 165px;
+    transform: scale(0);
+  }
+  
+  100%{
+    left: 465px;
+    width: 79px;
+    height: 165px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveApp {
+  0%{
+    left: 281px;
+    width: 458px;
+    height: 302px;
+    transform: scale(0);
+  }
+  
+  100%{
+    left: 281px;
+    width: 458px;
+    height: 302px;
+    transform: scale(1);
+
+  }
+}
+@keyframes moveHand {
+  0%{
+    left: 281px;
+    top: 129px;
+    
+    
+    
+  }
+  
+  100%{
+    left: 340px;
+    top: 193px;
+    
+
+  }
+}
+@keyframes moveAnalyser {
+  0%{
+    left: 617px;
+    top: 147px;
+    
+  }
+  
+  100%{
+    left: 485px;
+    top: 167px;
+    
+    
+
+  }
+}
+@keyframes moveGd {
+  0%{
+    left: 500px;
+    width: 0px;
+    top: 150;
+  }
+  100%{
+    left: 500px;
+   width:5px;
+    top: 150px;
+  }
+}
+/* @keyframes movePin {
+  0%{
+    left:495px ;
+    top:133px;
+    transform: rotate(38deg);
+    
+  }
+  50%{
+    left:490px ;
+    top:135px;
+    transform: rotate(40deg);
+    
+
+  } 
+   75%{
+    left:521px ;
+    top:164px;
+    transform: rotate(82deg);
+  }
+  100%{
+    left: 511px;
+    top: 137px;
+    transform: rotate(13deg);
+    
+    
+
+  } 
+} */
+@keyframes movePin{
+  0%{
+    left: 495px;
+    top: 133px;
+    transform: rotate(0deg);
+  }
+  25%{
+    left:515px;
+    top:146px;
+    transform: rotate(23deg);
+  }
+  50%{
+    left:531px;
+    top:178px;
+    transform: rotate(53deg);
+  }
+  100%{
+    left:523px;
+    top:230px;
+    transform: rotate(94deg);
+  }
+}
