@@ -121,12 +121,12 @@
 
 #IBgraph {
   display: none;
-  height: 449px;
-  width: 784px;
-  position: fixed;
+  height: 400px;
+  width: 700px;
+  position: absolute;
   background-color: white;
-  top: 110px;
-  left: 6px;
+  top: 82px;
+  left: 45px;
   border: black solid;
   border-width: 3px;
   z-index: 7;
@@ -154,12 +154,12 @@
 }
 #Vgraph {
   display: none;
-  height: 449px;
-  width: 784px;
-  position: fixed;
+  height: 450px;
+  width: 700px;
+  position: absolute;
   background-color: white;
-  top: 110px;
-  left: 6px;
+  top: 60px;
+  left: 45px;
   border: black solid;
   border-width: 3px;
   z-index: 7;
@@ -170,7 +170,7 @@
   border-radius: 20px;
   cursor: pointer;
   float: right;
-  margin-right: 8px;
+  margin-left: 620px;
   position: relative;
   margin-top: -34px;
 }
@@ -187,11 +187,11 @@
 }
 #calculate{
   display: none;
-  height: 441px;
-  width: 719px;
+  height: 400px;
+  width: 700px;
   position: fixed;
   background-color: white;
-  top: 110px;
+  top: 82px;
   left: 45px;
   border: black solid;
   border-width: 3px;
@@ -216,7 +216,7 @@
   float: right;
   margin-right: 8px;
   position: relative;
-  margin-top: 335px;
+  margin-top: 298px;
 }
 
 
@@ -349,10 +349,10 @@
 }
 #circuit_10{
   position:absolute;
-  left: 190px;
-  width: 54px;
+  left: 264px;
+  width: 159px;
   height: 68px;
-  top: 489px;
+  top: 318px;
 }
 #circuit_2 {
   position:absolute;
@@ -387,7 +387,7 @@
 }
 #circuit_6{
   position:absolute;
-  left: 391px;
+  left: 398px;
   width: 43px;
   height: 124px;
   top: 372px;
@@ -602,6 +602,14 @@
   top: 176px;
 
 }
+#sim14{
+  position:absolute;
+  left: 555px;
+  width: 45px;
+  height: 138px;
+  top: 176px;
+
+}
 #cir_1 {
   position:absolute;
   left: 310px;
@@ -638,9 +646,9 @@
   top: 185px;
 }
  #grad1 {
-  
+  position:absolute;
    background-image: linear-gradient(yellow, yellow);
-  transform: rotate(90deg); 
+  /* transform: rotate(90deg);  */
 } 
 #add {
   position: absolute;
@@ -801,19 +809,20 @@
 
 .observation {
   display: none;
-  height: 514px;
+  height: 400px;
   width: 700px;
   position: fixed;
   background-color: rgb(174, 215, 232);
-  top: 63px;
+  top: 82px;
   left: 45px;
   border: black solid;
   border-width: 3px;
   z-index: 7;
+  
 }
 
 .tablediv {
-  height: 472px;
+  height: 323px;
   justify-content: center;
   display: flex;
   overflow-y: auto;
@@ -837,7 +846,7 @@ th {
 
 .tableObservation {
   display: flex;
-  height: 40px;
+  height: 107px;
   width: 100%-10px;
   align-items: center;
   justify-content: space-between;
@@ -1050,6 +1059,20 @@ th {
 
   }
 }
+@keyframes moveAngle{
+  0%{
+  left: 360px;
+    top: 346px;
+    transform: scale(0);
+  }
+  
+  100%{
+    left: 360px;
+    top: 346px;
+    transform: scale(1);
+
+  }
+}
 @keyframes moveSq {
   0%{
     left: 281px;
@@ -1133,12 +1156,12 @@ th {
   0%{
     left: 500px;
     width: 0px;
-    top: 150;
+    top: 100px;
   }
   100%{
     left: 500px;
    width:5px;
-    top: 150px;
+    top: 100px;
   }
 }
 /* @keyframes movePin {

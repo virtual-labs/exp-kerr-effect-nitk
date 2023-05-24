@@ -128,17 +128,22 @@ function note1(){
     setTimeout(function(){
         document.getElementById("sim3").style.display = 'block';
         document.getElementById("sim2").style.display = 'block';
+        document.getElementById("notee").style.display = 'block';
         document.getElementById("sim1").style.animation =
               "moveSq 2s forwards";
         document.getElementById("sim2").style.animation =
               "moveBgMount 2s forwards";
-        setTimeout(function(){
+        
+        document.getElementById("notee").style.animation =
+              "moveAngle 2s forwards";      
+          setTimeout(function(){
             document.getElementById("sim3").style.display = 'none';
             document.getElementById("sim2").style.display = 'none';
+            document.getElementById("notee").style.display = 'none';
             note2();
-        },2200);
-              
-    },2000);
+          },3500);
+               
+    },800);
 
 
           
@@ -264,8 +269,10 @@ function ok4(){
                     document.getElementById("sim3").style.display = 'none'; 
                     document.getElementById("sim12").style.display = 'none';
                     setup();
+                    document.getElementById("sim13").style.display='none';
+                    document.getElementById("sim14").style.display='block'
                     note5();
-                    document.getElementById("sim13").style.filter = 'blur(0px)';
+                    document.getElementById("sim14").style.filter = 'blur(0px)';
                     document.getElementById("unit").style.filter = 'blur(0px)';
                     document.getElementById("field").style.filter = 'blur(0px)';
                     },2200);
@@ -404,12 +411,14 @@ function closeobservation() {
     document.getElementById('my_Chart').style.display = 'none';
     document.getElementById('calculate').style.display = 'none';
     document.getElementById('instructions').style.display = 'none';
+    
 }
 
 function plotgraph() {
     // third page
     a = 3;
     next()
+    
     document.getElementById("finalresult").disabled = false;
 }
 
@@ -420,7 +429,7 @@ function IBgraph() {
     document.getElementById('IBgraph').style.display = 'block';
     document.getElementById('myChart').style.display = 'block';
     document.getElementById('blocker').style.display = 'block';
-  
+    document.getElementById('slopebutton').disabled=false;
     
     // let xValues = z;
     // let yValues = e.map(value => value * 100);
@@ -613,7 +622,7 @@ function IBgraph() {
               line: {
                 color: 'gray',
                 width: 1,
-                dash: 'dotted'
+                dash: 'dot'
               } 
             });
             annotations.push({
@@ -984,7 +993,7 @@ var layout = {
     xref: 'x',
     yref: 'paper',
     x0: 253.33,
-    y0: 0.395,
+    y0: 0.396,
     x1: 253.33,
     y1: 0.40,
     line: {
@@ -1013,7 +1022,7 @@ var layout = {
     yref: 'y',
     x0: 0.32,
     y0: 40,
-    x1: 0.495,
+    x1: 0.498,
     y1: 40,
     line: {
       color: 'gray',
@@ -1122,6 +1131,7 @@ function clearing() {
         
         z.length = 0;
         e.length = 0;
+        
         document.getElementById("finalresult").disabled = true;
         // document.getElementById('coefficientvalue').innerHTML = 0;
         document.getElementById('carriercon').innerHTML = 0;

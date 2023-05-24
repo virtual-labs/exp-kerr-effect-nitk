@@ -49,7 +49,8 @@
             </div>
             <div>
                 <img class="circuit" id="circuit_1" src="images/base.png" title="Electromagnet" alt="circuit1">
-                <!-- <img class="circuit" id="circuit_10" src="images/meter.png" alt="circuit10"> -->
+
+
                 <img class="circuit" id="circuit_2" src="images/volt.png" title="High Voltage Supply Unit"
                     alt="circuit2">
                 <img class="circuit" id="circuit_3" src="images/analyser.png" title="Analyser" alt="circuit3">
@@ -63,6 +64,7 @@
                     alt="circuit7">
                 <img class="circuit" id="circuit_8" src="images/clamp.png" title="Photo Element/Detector"
                     alt="circuit8">
+                <img class="circuit" id="circuit_10" src="images/wire.png" alt="circuit10">
             </div>
 
         </div>
@@ -98,8 +100,12 @@
                         disabled>Observations</button>
                 </div>
                 <div class="insert-reset-observation">
+                    <button id="slopebutton" type="button" onclick="lineargraph()" disabled>Slope</button>
+                </div>
+                <div class="insert-reset-observation">
                     <button id="finalresult" type="button" onclick="hallcovalue()" disabled>Show Result</button>
                 </div>
+
                 <div class="result">
                     <br>
                     <label>Kerr Constant : </label><br>
@@ -131,6 +137,8 @@
                 <img class="circuit" id="circuit3" src="images/analyser.png" title="Analyser" alt="circuit3">
                 <img class="circuit" id="sim13" src="images/ana.png" title="Analyser" alt="circuit3"
                     style="display: none;">
+                <img class="circuit" id="sim14" src="images/rotate (1).png" title="Analyser" alt="circuit3"
+                    style="display: none;">
                 <img class="circuit" id="circuit4" src="images/polariser.png" title="220V AC Polarizing filter"
                     alt="circuit4">
                 <img class="circuit" id="circuit5" src="images/laser.png" title="0-1 kV Laser" alt="circuit5">
@@ -146,6 +154,7 @@
                 <span id="unit" style="display: none;">μA</span>
                 <img class="circuit" id="circuit8" src="images/clamp.png" alt="circuit8" title="Photo Element/Detector">
                 <img id="sim3" src="images/square (3).png" style="display: none;">
+
                 <img id="sim2" src="images/plztfront.png" style="display: none;">
 
                 <span id="note1" style="
@@ -169,6 +178,21 @@
                     margin-left: 125px;
                     margin-top: 0px;
                     " id="ok2" value="OK" onclick=" note1();" />
+                </span>
+                <span id="notee" style="
+                    position: absolute;
+                    padding: 10px;
+                    border: 1px solid black;
+                    background-color: black;
+                    border-radius: 5px;
+                    left: 360px;
+                    top: 346px;
+                    width: 303px;
+                    display:none;
+                    ">
+                    <p id="divii" style="color: white; font-size: 15px; padding: 5px; margin-top: 0px">
+                        The angle inside Kerr Cell is 45 degree.
+                    </p>
                 </span>
                 <span id="note2" style="
                     position: absolute;
@@ -258,8 +282,7 @@
                     margin-top: 0px;
                     " id="ok2" value="OK" onclick=" ok5();" />
                 </span>
-                <div id="grad1"
-                    style="position: fixed; height:174px;width: 0px;left: 500px; top: 150px;transform: rotate(77deg);">
+                <div id="grad1" style="height:174px;width: 0px;left: 500px; top: 145px;transform: rotate(73deg);">
 
                 </div>
                 <img class="circuit" id="sim4" src="images/S2.png" alt="cir_1" style="display: none;">
@@ -304,8 +327,9 @@
             </div>
             <div id="IBgraph">
                 <div id="myChart"></div>
-                <button type="button" onclick="lineargraph()"
-                    style="width: 100px; display: block">V<sup>2</sup>(10<sup>5</sup>V<sup>2</sup>) GRAPH</button>
+                <button onclick="closeobservation()">Close</button>
+                <!-- <button type="button" onclick="lineargraph()"
+                    style="width: 100px; display: block">V<sup>2</sup>(10<sup>5</sup>V<sup>2</sup>) GRAPH</button> -->
 
             </div>
             <div id="Vgraph">

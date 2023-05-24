@@ -30,7 +30,17 @@
         "c": "There is no difference between a Pockels cell and a Kerr cell.",
         "d": "none of the above"
       },
-      "correctAnswer": "c"
+      "correctAnswer": "a"
+    },
+    {
+      "question": "How does the Kerr effect affect the polarization of light waves?",
+      "answers": {
+        "a": "It does not affect the polarization of light waves",
+        "b": "It converts linearly polarized light waves to circularly polarized light waves",
+        "c": "It rotates the polarization of linearly polarized light waves",
+        "d": "none of the above"
+      },
+      "correctAnswer": "a"
     },
     {
       "question": "  What is the Kerr constant?",
