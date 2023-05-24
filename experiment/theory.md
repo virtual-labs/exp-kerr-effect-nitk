@@ -45,14 +45,14 @@ Solving the equation for V<sup>2</sup> gives:
 <center>
 <img src="images/eq_7.png"></img>
 </center>
-By plotting V<sup>2</sup>against 2 \* sin<sup>-1</sup>√I/I<sub>0</sub> , an approximately straight line is obtained and the Kerr constant can be derived from its slope, because the geometrical dimensions l and d for the Kerr cell (PLZT element) are known.
+By plotting V<sup>2</sup>against 2 * sin<sup>-1</sup>√I/I<sub>0</sub> , an approximately straight line is obtained and the Kerr constant can be derived from its slope, because the geometrical dimensions l and d for the Kerr cell (PLZT element) are known.
 
 <center>
-<img src="images/grp1.png"></img>
+<img src="images/grp1.PNG"></img>
 </center>
 
-The graph of II0 vs V (volt) is shown in Figure 2. The voltage at which the luminous intensity reaches a maximum for the first time. At this voltage, the normal and extraordinary beams are phase-shifted by 180°. It is, therefore, the ″halfwave voltage ″. It is a function of the PLZT element composition and temperature.
+The graph of I/I<sub>0</sub> vs V (volt) is shown in Figure 2. The voltage at which the luminous intensity reaches a maximum for the first time. At this voltage, the normal and extraordinary beams are phase-shifted by 180°. It is, therefore, the ″halfwave voltage ″. It is a function of the PLZT element composition and temperature.
 
 <center>
-<img src="images/grp2.png"></img>
+<img src="images/grp2.PNG"></img>
 </center>

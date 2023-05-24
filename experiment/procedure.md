@@ -1,6 +1,6 @@
 1. The screen of the simulator will display objective,apparatus,theory and procedure.
 
-2. Clcik the next button and the simulator will display the experimental setup.(PLZT element which is set up to 45 degree with respect to incident light.)
+2. Click the next button and the simulator will display the experimental setup.(PLZT element which is set up to 45 degree with respect to incident light.)
 
 3. Set the polarizer and analyser to 0 degree and turn on the laser.
 
