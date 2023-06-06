@@ -54,16 +54,19 @@
                 <img class="circuit" id="circuit_2" src="images/volt.png" title="High Voltage Supply Unit"
                     alt="circuit2">
                 <img class="circuit" id="circuit_3" src="images/analyser.png" title="Analyser" alt="circuit3">
+
                 <img class="circuit" id="circuit_4" src="images/polariser.png" title="220V AC Polarizing filter"
                     alt="circuit4">
                 <img class="circuit" id="circuit_5" src="images/laser.png" title="0-1 kV Laser" alt="circuit5">
                 <img class="circuit" id="circuit_6" src="images/plzt.png" title="Kerr cell" alt="circuit6">
-                <img class="circuit" id="circuit_9" src="images/b1.png" title="Universal Measuring Amplifier"
-                    alt="circuit9">
+                <img class="circuit" id="circuit_9" src="images/b1.png" title="Measuring Amplifier" alt="circuit9">
                 <img class="circuit" id="circuit_7" src="images/multimeter.png" title="Digital multi meter"
                     alt="circuit7">
+
+                <img class="circuit" id="circuit_11" src="images/multimeter wire.png" alt="circuit11">
                 <img class="circuit" id="circuit_8" src="images/clamp.png" title="Photo Element/Detector"
                     alt="circuit8">
+                <img class="circuit" id="circuit_12" src="images/clampwire.png" alt="circuit12">
                 <img class="circuit" id="circuit_10" src="images/wire.png" alt="circuit10">
             </div>
 
@@ -75,7 +78,7 @@
 
             <div class="simoptions" id="simoptions">
                 <div class="procedure">
-                    <label style="text-align:left;">Choose the procedure :</label><br>
+                    <!-- <label style="text-align:left;">Choose the procedure :</label><br> -->
                     <!--<select name="exp" id="exp" onChange="update()">
                         <option value="Empty" hidden>Select the Procedure</option>
                         <option value="mfield vs current">Magnetic Field vs Current</option>
@@ -135,6 +138,10 @@
 
 
                 <img class="circuit" id="circuit3" src="images/analyser.png" title="Analyser" alt="circuit3">
+                <img class="circuit" id="circuit13" src="images/analyser (1).png" title="Analyser" alt="circuit13"
+                    style="display: none;">
+                <img class="circuit" id="circuit14" src="images/polariser (1).png" title="polariser" alt="circuit14"
+                    style="display: none;">
                 <img class="circuit" id="sim13" src="images/ana.png" title="Analyser" alt="circuit3"
                     style="display: none;">
                 <img class="circuit" id="sim14" src="images/rotate (1).png" title="Analyser" alt="circuit3"
@@ -145,18 +152,19 @@
                 <img class="circuit" id="sim1" src="images/square.png"
                     style="display: none;left:281px;top: 129px; width: 458px;height: 302px;">
                 <img class="circuit" id="circuit6" src="images/plzt.png" title="Kerr cell" alt="circuit6">
-                <img class="circuit" id="circuit9" src="images/b1.png" title="Universal Measuring Amplifier"
-                    alt="circuit9">
+                <img class="circuit" id="circuit9" src="images/b1.png" title="Measuring Amplifier" alt="circuit9">
                 <img class="circuit" id="circuit7" src="images/multimeter.png" title="Digital multi meter"
                     alt="circuit7">
+                <img class="circuit" id="circuit11" src="images/multimeter wire.png" alt="circuit11">
                 <img class="circuit" id="circuit10" src="images/wire.png" alt="circuit10">
                 <span id="field" style="display: none;"></span>
                 <span id="unit" style="display: none;">μA</span>
                 <img class="circuit" id="circuit8" src="images/clamp.png" alt="circuit8" title="Photo Element/Detector">
+                <img class="circuit" id="circuit12" src="images/clampwire.png" alt="circuit12">
                 <img id="sim3" src="images/square (3).png" style="display: none;">
 
                 <img id="sim2" src="images/plztfront.png" style="display: none;">
-
+                <img id="sim18" src="images/new arrow (1).png" style="display: none;">
                 <span id="note1" style="
                     position: absolute;
                     padding: 10px;
@@ -169,7 +177,7 @@
                     display:none;
                     ">
                     <p id="divi2" style="color: white; font-size: 15px; padding: 5px; margin-top: 0px">
-                        Note:- PLZT element which is set to 45deg with respect to incident light.
+                        Note:- PLZT element which is set to 45° with respect to incident light.
                     </p>
                     <input type="button" style="
                     cursor: pointer;
@@ -191,7 +199,7 @@
                     display:none;
                     ">
                     <p id="divii" style="color: white; font-size: 15px; padding: 5px; margin-top: 0px">
-                        The angle inside Kerr Cell is 45 degree.
+                        PLZT element which is set to 45° with respect to incident light.
                     </p>
                 </span>
                 <span id="note2" style="
@@ -206,7 +214,7 @@
                     display:none;
                     ">
                     <p id="divi2" style="color: white; font-size: 15px; padding: 5px; margin-top: 0px">
-                        Note:-Set the polariser and analyser to 0deg and turn on the laser.
+                        Note:-Set the polariser and analyser to 0°and turn on the laser.
                     </p>
                     <input type="button" style="
                     cursor: pointer;
@@ -250,7 +258,7 @@
                     display:none;
                     ">
                     <p id="divi4" style="color: white; font-size: 15px; padding: 5px; margin-top: 0px">
-                        Note:-Set the analyser to 90deg clockwise
+                        Note:-Set the analyser to 90° clockwise
                     </p>
                     <input type="button" style="
                     cursor: pointer;
@@ -285,8 +293,11 @@
                 <div id="grad1" style="height:174px;width: 0px;left: 500px; top: 145px;transform: rotate(73deg);">
 
                 </div>
+                <img class="circuit" id="sim15" src="images/right_hand.png" alt="cir_15" style="display: none;">
+                <img class="circuit" id="sim16" src="images/nopin.png" style="display: none;">
+                <img class="circuit" id="sim17" src="images/rotate.png" style="display: none;">
                 <img class="circuit" id="sim4" src="images/S2.png" alt="cir_1" style="display: none;">
-                <img class="circuit" id="sim7" src="images/new ib.png" alt="cir_1" style="display: none;">
+                <img class="circuit" id="sim7" src="images/new ib1.png" alt="cir_1" style="display: none;">
 
                 <img class="circuit" id="sim5" src="images/ledbtn.png" alt="cir_2" style="display: none;">
                 <img class="circuit" id="sim8" src="images/ana.png" alt="cir_3" style="display: none;">
@@ -386,14 +397,14 @@
                             <th>I/I<sub>0</sub> in radians</th>
                             <th>Δ/2 radians</th>
                             <th>Δ/2 degree</th>
-                            <th>Δ</th>
+                            <th>Δ degree</th>
                         </tr>
                     </table>
                 </div>
                 <div class="tableObservation" id="IBtableObservation">
                     <button type="button" onclick="closeobservation()">Close</button>
                     <button type="button" onclick="clearing()" style="width: 70px;">Clear All</button>
-                    <button type="button" onclick="IBgraph()" style="width: 100px;">I/I<sub>0</sub> GRAPH</button>
+                    <button type="button" onclick="IBgraph()" style="width: 100px;">GRAPH</button>
                     <!-- <button type="button" onclick="lineargraph()"
                         style="width: 100px;">V<sup>2</sup>(10<sup>5</sup>V<sup>2</sup>) GRAPH</button> -->
                 </div>
