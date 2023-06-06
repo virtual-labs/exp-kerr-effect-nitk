@@ -1,0 +1,9 @@
+
+/home/runner/work/exp-kerr-effect-nitk/exp-kerr-effect-nitk/experiment/simulation/js/script(1).js
+  1202:10  error  Parsing error: Identifier 'sortingArray' has already been declared
+
+/home/runner/work/exp-kerr-effect-nitk/exp-kerr-effect-nitk/experiment/simulation/js/script.js
+  1202:10  error  Parsing error: Identifier 'sortingArray' has already been declared
+
+✖ 2 problems (2 errors, 0 warnings)
+

@@ -1,0 +1,56 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the half-wave voltage in a Kerr cell?",
+      "answers": {
+        "a": "The voltage required to turn linearly polarized light into circularly polarized light.",
+        "b": "The voltage required to turn circularly polarized light by 90 degrees.",
+        "c": "The voltage required to turn elliptically polarized light into linearly polarized light.",
+        "d": "The voltage required to turn linearly polarized light by 90 degrees."
+      },
+      "correctAnswer": "d"
+    },
+    {
+      "question": "In the Kerr effect, what is the cross condition?",
+      "answers": {
+        "a": "The condition when the analyzer is set perpendicular to the polarizer and no light passes through.",
+        "b": "The condition when the light is completely absorbed by the Kerr cell.",
+        "c": "The condition when the voltage applied to the Kerr cell is maximum.",
+        "d": "The condition when the electric field vector of the light is perpendicular to the direction of propagation."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "question": "What is the nature of the graph of Square of the voltage applied to the PLZT-element as a function of the phase-shift (∆) between normal and extraordinary beam?",
+      "answers": {
+        "a": "Parabola",
+        "b": "hyperbola",
+        "c": "increase linearly",
+        "d": "increase exponentially"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "question": "Which of the following statements about polarizers is true?",
+      "answers": {
+        "a": "A polarizer is a device that emits polarized light.",
+        "b": "A polarizer is a device that absorbs polarized light.",
+        "c": "A polarizer is a device that changes the polarization of light.",
+        "d": "A polarizer is a device that allows light with a specific polarization to pass through"
+      },
+      "correctAnswer": "d"
+
+    },
+    {
+      "question": "Which of the following statements is true about the ordinary and extraordinary rays in the Kerr effect?",
+      "answers": {
+        "a": "Both ordinary and extraordinary rays are polarized in the same plane.",
+        "b": "The ordinary ray is polarized perpendicular to the plane of incidence, while the extraordinary ray is polarized parallel to it.",
+        "c": "The extraordinary ray experiences a greater phase shift than the ordinary ray in a Kerr cell.",
+        "d": "The ordinary ray is always stronger than the extraordinary ray"
+      },
+      "correctAnswer": "b"
+    }
+  ]
+}
