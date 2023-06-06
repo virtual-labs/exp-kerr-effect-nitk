@@ -394,17 +394,33 @@
 }
 #circuit_7{
   position:absolute;
-  left: 572px;
-  width: 128px;
+  left: 565px;
+  width: 63px;
   height: 69px;
-  top: 506px;
+  top: 513px;
+  transform: rotate(352deg);
+}
+#circuit_11{
+  position:absolute;
+  left: 591px;
+  width: 117px;
+  height: 69px;
+  top: 525px;
   transform: rotate(352deg);
 }
 #circuit_8{
   position:absolute;
-  left: 561px;
-  width: 107px;
-  height: 192px;
+  left: 550px;
+  width: 51px;
+  height: 136px;
+  top: 365px;
+  
+}
+#circuit_12{
+  position:absolute;
+  left: 549px;
+  width: 119px;
+  height: 191px;
   top: 365px;
   
 }
@@ -440,6 +456,22 @@
   top: 169px;
 
 }
+#circuit13{
+  position:absolute;
+  left: 555px;
+  width: 45px;
+  height: 143px;
+  top: 169px;
+
+}
+#circuit14{
+  position:absolute;
+  left: 424px;
+  width: 45px;
+  height: 144px;
+  top: 169px;
+
+}
 #circuit4{
   position:absolute;
   left: 424px;
@@ -467,16 +499,32 @@
 #circuit7{
   position:absolute;
   left: 574px;
-  width: 194px;
-  height: 97px;
-  top: 325px;
+  width: 96px;
+  height: 88px;
+  top: 336px;
+  transform: rotate(353deg);
+}
+#circuit11{
+  position:absolute;
+  left: 609px;
+  width: 154px;
+  height: 48px;
+  top: 366px;
   transform: rotate(353deg);
 }
 #circuit8{
   position:absolute;
   left: 621px;
-  width: 107px;
-  height: 208px;
+  width: 51px;
+  height: 137px;
+  top: 182px;
+  
+}
+#circuit12{
+  position:absolute;
+  left: 623px;
+  width: 105px;
+  height: 213px;
   top: 182px;
   
 }
@@ -510,6 +558,14 @@
   width: 76px;
   height: 144px;
   top: 129px;
+  
+}
+#sim18{
+  position:absolute;
+  left: 533px;
+  width: 102px;
+  height: 28px;
+  top: 206px;
   
 }
 #sim3{
@@ -609,6 +665,30 @@
   height: 138px;
   top: 176px;
 
+}
+#sim15{
+  position:absolute;
+  left: 712px;
+  width: 70px;
+  height: 50px;
+  top: 130px;
+}
+#sim16{
+  position:absolute;
+  left: 555px;
+  width: 41px;
+  height: 143px;
+  top: 171px;
+
+}
+#sim17{
+  position:absolute;
+  left: 533px;
+  width: 70px;
+  height: 56px;
+  top: 123px;
+  transform: rotate(317deg);
+  
 }
 #cir_1 {
   position:absolute;
@@ -757,7 +837,7 @@
   
 } */
 #fieldvalue {
-  width: 30px;
+  width: 37px;
   height: 16px;
   position: absolute;
   margin-top: 243px;
@@ -774,7 +854,7 @@
   width: 36px;
   height: 15px;
   position: absolute;
-  margin-top: 336px;
+  margin-top: 341px;
   margin-left: 597px;
   border-style: solid;
   font-size: 14px;
@@ -787,7 +867,7 @@
   width: 13px;
   height: 14px;
   position: absolute;
-  margin-top: 339px;
+  margin-top: 341px;
   margin-left: 637px;
   font-size: 12px;
   text-align: center;
@@ -1073,6 +1153,20 @@ th {
 
   }
 }
+@keyframes moveArrow{
+  0%{
+  left: 533px;
+    top: 206px;
+    transform: scale(0);
+  }
+  
+  100%{
+    left: 533px;
+    top: 206px;
+    transform: scale(1);
+
+  }
+}
 @keyframes moveSq {
   0%{
     left: 281px;
@@ -1105,6 +1199,7 @@ th {
 
   }
 }
+
 @keyframes moveApp {
   0%{
     left: 281px;
@@ -1137,6 +1232,22 @@ th {
 
   }
 }
+@keyframes move_Hand {
+  0%{
+    left: 712px;
+    top: 130px;
+    
+    
+    
+  }
+  
+  100%{
+    left: 561px;
+    top: 124px;
+    
+
+  }
+}
 @keyframes moveAnalyser {
   0%{
     left: 617px;
@@ -1159,7 +1270,7 @@ th {
     top: 100px;
   }
   100%{
-    left: 500px;
+    left: 510px;
    width:5px;
     top: 100px;
   }
@@ -1192,6 +1303,18 @@ th {
 
   } 
 } */
+@keyframes move_Pin{
+  0%{
+    left: 533px;
+    top: 122px;
+    transform: rotate(317deg);
+  }
+  100%{
+    left: 563px;
+    top: 126.5px;
+    transform: rotate(358deg);
+  }
+}
 @keyframes movePin{
   0%{
     left: 495px;
