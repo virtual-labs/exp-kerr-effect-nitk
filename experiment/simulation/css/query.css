@@ -10,12 +10,14 @@ em:current font size
 /* **************************** */
 
 @media (min-width: 1200px) {
+  body {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
   .canvas__div {
     padding: 20px;
   }
-  /* #variables {
-  width: 100%;
-} */
+
   #IBgraph {
     transform: scale(0.75);
     margin-top: -18%;
@@ -80,17 +82,11 @@ em:current font size
   }
   .canvas {
     display: block;
-    /* width: 100%;
-    height: 100%; */
-    /* background-color: red; */
   }
   .div__control img {
     width: 3rem;
     height: 2.8rem;
   }
-  /* #variables {
-    width: 100%;
-  } */
 
   .canvas__div {
     padding: 30px;
@@ -124,12 +120,6 @@ em:current font size
   #IBtableObservation {
     transform: scale(0.95);
   }
-  /* .practice {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-  } */
 }
 
 /* **************************** */
@@ -137,6 +127,10 @@ em:current font size
 /* **************************** */
 
 @media (max-width: 59em) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
   .tool-link:link,
   .tool-link:visited {
     gap: 0.5rem;
@@ -159,6 +153,10 @@ em:current font size
     justify-content: space-evenly;
     border-radius: 0;
     scroll-behavior: auto;
+    margin: 0;
+  }
+  .main {
+    grid-column: 1/-1;
   }
   .tool-menu {
     list-style: none;
@@ -180,9 +178,6 @@ em:current font size
 
   .canvas {
     display: block;
-    /* width: 100%;
-    height: 100%; */
-    /* background-color: red; */
   }
   .main-section {
     grid-template-columns: 1fr;
@@ -192,8 +187,6 @@ em:current font size
   }
   .canvas {
     display: block;
-    /* width: 100%;
-    height: 100%; */
     border: none;
   }
   .footer {
@@ -239,8 +232,6 @@ em:current font size
   }
   .canvas {
     display: block;
-    /* width: 100%;
-    height: 100%; */
     border: none;
   }
   .tool-list span {
@@ -361,33 +352,14 @@ em:current font size
   .model {
     margin: 50px;
   }
-  /* .task-screen.practice {
-    width: 100%;
-   min-height: 100px;
-    background-color: red;
-  } */
-  /* .practice {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 4rem;
-    object-fit: cover;
-  } */
 }
 
 /* **************************** */
 /* Below 540px (Smaller Tablets) */
 /* **************************** */
 @media (max-width: 34em) {
-  /* .container {
-    gap: 1rem;
-  } */
-
   .title-div h1 {
-    /* padding: 0.2rem; */
-
     font-size: 1.6rem;
-    /* text-align: center; */
   }
 
   .logo-div {
@@ -395,8 +367,6 @@ em:current font size
   }
   .div__control {
     gap: 2rem;
-    /* top: 1.8rem;
-    right: 1.5rem; */
   }
   .ctrl-icons {
     width: 2.5rem;
@@ -432,8 +402,6 @@ em:current font size
   }
   .canvas {
     display: block;
-    /* width: 100%;
-    height: 100%; */
     border: none;
   }
   .div__control img {
@@ -448,10 +416,6 @@ em:current font size
   }
 
   #IBgraph {
-    /* transform: scale(0.5);
-    margin-top: -44%;
-    margin-left: -63%;
-    width: 213%; */
     transform: scale(0.6);
     margin-top: -23%;
     margin-left: -35%;
@@ -495,6 +459,9 @@ em:current font size
 }
 
 @media (max-width: 27em) {
+  .objective {
+    height: auto;
+  }
   .sidebar {
     position: fixed;
     padding: 0;
@@ -523,13 +490,8 @@ em:current font size
     overflow: hidden;
     margin: 0;
     padding: 0rem;
-    /* grid-template-columns: 1fr;
-    overflow: hidden; */
   }
 
-  .objective {
-    padding: 1rem;
-  }
   .apparatus-screen {
     grid-template-columns: 1fr;
   }
@@ -537,9 +499,7 @@ em:current font size
     margin: 0;
     padding: 0;
   }
-  /* .practice {
-    padding: 0.5rem;
-  } */
+
   .quiz-div {
     padding: 0.5rem;
     width: 100%;
@@ -584,9 +544,7 @@ em:current font size
   #IBtableObservation {
     transform: scale(1);
   }
-  /* .circuit{
-    width: 100%;
-  } */
+
   #image_container {
     display: flex;
     align-items: center;
