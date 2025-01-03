@@ -41,6 +41,7 @@
 
   </head>
   <body>
+    <div class="container">
     <div class="title-div-container">
       <div class="title-div">
           <div class="logo-div">
@@ -50,7 +51,6 @@
           </h1>
         </div>
       </div>
-    <div class="container">
       <div class="sidebar">
         <ul class="tool-menu">
           <li class="tool-list tool-objective" onclick="displayDiv(this)">
@@ -210,7 +210,6 @@
               
                 <img class="circuit" id="sim7" src="images/new_ib1.png" alt="cir_1" style="display: none;">
 
-                <!-- <img class="circuit" id="sim5" src="images/ledbtn.png" alt="cir_2" style="display: none;"> -->
                 <img class="circuit" id="sim8" src="images/ana.png" alt="cir_3" style="display: none;">
                 <img class="circuit" id="sim6" src="images/hand.png" alt="cir_3" style="display: none;">
                 <img class="circuit" id="sim9" src="images/nopin.png" style="display: none;">
@@ -275,7 +274,6 @@
                       <li>Display the graph of () of vs degree.Display the slope and Kerr Constant.</li>
                       <li>Click on "Result Button" to display the results.</li>
               </div>
-              <!-- <button type="button" onclick="closeobservation()">Close</button> -->
           </div>
          
           <div class="observation" id="IBobservation">
@@ -292,13 +290,14 @@
                       <th>Δ degree</th>
                     </tr>
                 </table>
+       
             </div>
             <div class="tableObservation" id="IBtableObservation">
-                <button type="button" onclick="closeobservation()">Close</button>
+              <button type="button" onclick="closeobservation()">Close</button>
 
-                <button type="button" onclick="clearing()" style="width: 120px;">Clear All</button>
-                <button type="button" onclick="IBgraph()" style="width: 100px;">Graph</button>
-            </div>
+              <button type="button" onclick="clearing()" style="width: 120px;">Clear All</button>
+              <button type="button" onclick="IBgraph()" style="width: 100px;">Graph</button>
+          </div>
         </div>
         
             </div>
@@ -334,7 +333,6 @@
               </div>
                 <div class="insert-reset-observation ">
                     <button id="slopebutton" type="button" onclick="lineargraph()" disabled>
-                      <!-- Trigger Button On    -->
                       Slope
                     </button>
                     <button id="remove" type="button" onclick="remove()" style="display:none;font-size: 12px;">Trigger Button off</button>
@@ -361,14 +359,14 @@
             onclick="movetoTop()"
             ontouchstart="movetoTop"
           >
-            ↑
           </button>
           </div>
-          </div>
-         
           <div class="main__task-div footer">
             <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
           </div>
+          </div>
+         
+          
         </div>
     </div>
     <script defer src="js/script.js"></script>
