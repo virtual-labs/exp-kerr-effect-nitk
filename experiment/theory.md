@@ -1,3 +1,14 @@
+**Apparatus**:  
+Kerr cell, PLZT-element, High voltage supply unit (0-1 kV), He-Ne Laser (1.0 mW), 220V
+AC Polarizing filter, Digital multimeter.
+
+**Schematic diagram of the experimental setup**:
+
+<center>
+<img src="images/schematic.png" width="600" ></img>
+</center>
+
+**Theory**:  
 The Kerr effect is a phenomenon in which the refractive index of a material changes in response to an applied electric field. The effect is named after John Kerr, who first observed it in 1875. The Kerr effect arises from the fact that an applied electric field induces a polarisation in a material. This polarisation causes a change in the electric field that the material experiences, which in turns affects its refractive index. Specifically, the Kerr effect causes the refractive index of a material to change as a function of the square of the electric field strength. The light from the He/Ne laser which is vertically polarized on passing through the polarizer, impinges on the PLZT element which is set in its holder at 45° to the vertical. The incident linearly polarized wave can be regarded as the superimposition of two “in phase” oscillating waves which are polarized, one perpendicularly and the other parallel, to the PLZT element and to the electric field that is applied to the PLZT element. This produces a phase difference between the two waves. For a phase difference between the two waves of λ/2 a linear polarized wave results from the superimposition of the two waves after they have passed through the PLZT element. This linearly polarized wave is turned by 90° with respect to the direction of incidence, e.g. with respect to the vertical. The applied voltage is therefore called the “half-wave voltage”. In this case the light intensity behind the analyzer which is at an angle of 90° to the polarizer will show a maximum.
 
 The light wave, whose field vector oscillates parallel to the electric field, is called the extraordinary beam whereas the wave oscillating perpendicular to the field is known as the ordinary beam. If the corresponding refractive indices are designated by and and l is the distance in the PLZT element covered by the light, then there is a difference in optical paths for the two waves of
