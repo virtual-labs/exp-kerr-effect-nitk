@@ -1,0 +1,55 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is birefringence?",
+      "answers": {
+        "a": "The phenomenon in which light is reflected from a surface.",
+        "b": "The phenomenon in which light is scattered in all directions.",
+        "c": ".The phenomenon in which light is absorbed by a material.",
+        "d": "The phenomenon in which a material has different refractive indices for light polarized in different directions."
+      },
+      "correctAnswer": "d"
+    },
+    {
+      "question": "Which of the following statements accurately describes the Kerr effect?",
+      "answers": {
+        "a": "A phenomenon where light is absorbed by a material and then re-emitted with a delay.",
+        "b": "A phenomenon where the refractive index of a material changes in response to an applied electric field.",
+        "c": "A phenomenon where the angle of reflection of light changes as it passes from one medium to another.",
+        "d": "A phenomenon where light is split into its component colors as it passes through a prism."
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "What is the difference between a Pockels cell and a Kerr cell?",
+      "answers": {
+        "a": "A Pockels cell creates a phase shift that is proportional to the voltage, while a Kerr cell creates a phase shift that is proportional to the square of the voltage",
+        "b": "A Pockels cell creates a phase shift that is proportional to the square of the voltage, while a Kerr cell creates a phase shift that is proportional to the voltage",
+        "c": "There is no difference between a Pockels cell and a Kerr cell.",
+        "d": "A Kerr cell creates a phase shift that is independent of the applied voltage."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "question": "How does the Kerr effect affect the polarization of light waves?",
+      "answers": {
+        "a": "It does not affect the polarization of light waves",
+        "b": "It converts linearly polarized light waves to circularly polarized light waves",
+        "c": "It rotates the polarization of linearly polarized light waves",
+        "d": "It changes the frequency of the light waves."
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "question": "What is the Kerr constant?",
+      "answers": {
+        "a": "The voltage required to rotate the plane of polarization by 90 degrees.",
+        "b": "The rate of change of the polarization with respect to the magnetic field",
+        "c": "The ratio of the change in polarization to the applied electric field.",
+        "d": "The rate of change of the index of refraction with respect to the electric field."
+      },
+      "correctAnswer": "d"
+    }
+  ]
+}
